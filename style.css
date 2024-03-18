@@ -1,0 +1,108 @@
+@font-face {
+  font-family: spotify-font;
+  src: url(fonts/CircularStd-Bold.otf);
+}
+
+body {
+  background-color: #212121;
+  margin: 0;
+  font-family: spotify-font, sans-serif;
+}
+
+h1 {
+  color: #da7878;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+h2 {
+  color: #da7878;
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: -0.7em;
+}
+
+h3 {
+  color: #2a9850;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.nieuwNummerKnop {
+  font-family: spotify-font, sans-serif;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  background-color: #2a9850;
+  cursor: pointer;
+  padding: 0.3em;
+  margin: 1em;
+  display: none;
+}
+
+.nieuweArtiestKnop {
+  font-family: spotify-font, sans-serif;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  background-color: #8d2b2b;
+  cursor: pointer;
+  padding: 0.3em;
+  margin: 1em;
+  display: none;
+}
+
+#artiest {
+  font-size: 2em;
+  color: #2a9850;
+  display: flex;
+  margin: 1em;
+  justify-content: center;
+}
+
+#test {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.artiestList {
+  background-color: #2a9850;
+  width: fit-content;
+  display: flex;
+  margin: auto;
+  border-radius: 1.5em;
+  margin-bottom: 5em;
+}
+
+.artiestListItems {
+  color: #deddef;
+  list-style-type: none;
+  font-size: 3em;
+  padding: 0.1em;
+  margin: 0.7em;
+}
+
+.artiestListItems:hover {
+  cursor: pointer;
+}
+
+.artiest1:hover,
+.artiest2:hover,
+.artiest3:hover {
+  background-color: rgb(166, 80, 80);
+}
+
+.artiest1,
+.artiest2 {
+  margin-bottom: 0.5em;
+}

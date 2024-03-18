@@ -1,0 +1,84 @@
+// Fetch is een ingebouwde JavaScript-methode die wordt gebruikt om resources op te halen (zoals bestanden, afbeeldingen, JSON-gegevens, enzovoort) via het HTTP-protocol.
+
+// met de fetch api kan je Een HTTP-verzoek maken: http verzoek is een bericht dat wordt verzonden van een client, zoals een webbrowser of een applicatie, naar een server. Het wordt gebruikt om specifieke acties van de server te vragen, zoals het ophalen van gegevens, het verzenden van gegevens naar de server, het bijwerken van gegevens, enzovoort.
+
+// asynchroon:  meerdere taken tegelijk uitvoeren zonder te wachten op één specifieke taak om te worden voltooid voordat je verder gaat.
+
+// het HTTP-verzoek (met fetch api) wordt uitgevoerd zonder de uitvoering van andere JavaScript-code te blokkeren. Hierdoor kan de browser andere taken blijven uitvoeren terwijl het wacht op de voltooiing van het HTTP-verzoek.
+
+// javascript kan wel andere taken uitvoeren tijdens het volgen van de promise keten, maar binnen de promise keten kan je niet zomaar iets overslaan - komt door then.
+
+// promise keten, maakt het mogelijk om asynchrone taken gestructureerd en op volgorde uit te voeren
+
+// Als er ergens in de Promise-keten een fout optreedt, wordt deze afgehandeld door de .catch() methode en wordt er een foutmelding gelogd naar de console.
+
+// .then(function(response) {
+//   return response.json();
+// })
+// .then(function(data) {
+//   console.log(data);
+// })
+// .catch(function(error) {
+//   console.error("Error:", error);
+
+// De index van een array wordt gebruikt om de positie van een element in een array weer te geven
+
+// begint bij 0, indexnummer 0
+
+// function getRandomArtiesten(artiestenIds) {
+//   const getRandomArtiest = Math.floor(Math.random() * artiestenIds.length);
+//   console.log(getRandomArtiest);
+//   return artiestenIds[getRandomArtiest];
+// }
+
+// const getRandomArtiest = getRandomArtiesten(artiestenIds);
+
+// console.log("Random element:", getRandomArtiest);
+
+// function getRandomSearch() {
+//   // A list of all characters that can be chosen.
+//   const characters = "abcdefghijklmnopqrstuvwxyz";
+
+//   // Gets a random character from the characters string.
+//   const randomCharacter = characters.charAt(
+//     Math.floor(Math.random() * characters.length)
+//   );
+//   let randomSearch = "";
+
+//   // Places the wildcard character at the beginning, or both beginning and end, randomly.
+//   switch (Math.round(Math.random())) {
+//     case 0:
+//       randomSearch = randomCharacter + "%";
+//       break;
+//     case 1:
+//       randomSearch = "%" + randomCharacter + "%";
+//       break;
+//   }
+
+//   return randomSearch;
+// }
+
+// const randomOffset = Math.floor(Math.random() * 10000);
+
+// function randomSong() {
+//   const offset = randomOffset;
+//   const searchQuery = getRandomSearch();
+
+//   fetch(
+//     `https://api.spotify.com/v1/search?type=track&q=${searchQuery}&offset=${offset}`,
+//     {
+//       method: "GET",
+//       headers: {
+//         Authorization:
+//           "Bearer " +
+//           "BQAU-8p4iETWeLcYGczrwzSKbXLSsT42WNB_fD8zG0QlE51XJpp5JsCHXA12387zQA0eI9BcSvlc4r1dUEXENKZtOMwzbXPYhjrrc36APVEiyzFAc1k",
+//       },
+//     }
+//   )
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data);
+//     })
+//     .catch((error) => console.error("Error:", error));
+// }
+// }
