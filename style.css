@@ -25,7 +25,8 @@ h2 {
   margin-top: -0.7em;
 }
 
-h3 {
+#artiest,
+#artiestKiezen {
   color: #2a9850;
   font-size: 2.5rem;
   display: flex;
@@ -33,7 +34,16 @@ h3 {
   margin-top: 2em;
 }
 
-.nieuwNummerKnop {
+#playlistTitel {
+  color: #2a9850;
+  font-size: 2.5rem;
+  margin-top: -2em;
+  margin-left: 4em;
+}
+
+.nieuwNummerKnop,
+.nieuweArtiestKnop,
+.likeKnop {
   font-family: spotify-font, sans-serif;
   font-size: 2em;
   color: rgb(255, 255, 255);
@@ -41,18 +51,20 @@ h3 {
   cursor: pointer;
   padding: 0.3em;
   margin: 1em;
-  display: none;
+}
+
+.button3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.likeKnop {
+  background-color: rgb(36, 99, 29);
 }
 
 .nieuweArtiestKnop {
-  font-family: spotify-font, sans-serif;
-  font-size: 2em;
-  color: rgb(255, 255, 255);
   background-color: #8d2b2b;
-  cursor: pointer;
-  padding: 0.3em;
-  margin: 1em;
-  display: none;
 }
 
 #artiest {
@@ -63,7 +75,7 @@ h3 {
   justify-content: center;
 }
 
-#test {
+#artiestEmbed {
   display: flex;
   justify-content: center;
   margin: auto;
@@ -105,4 +117,8 @@ h3 {
 .artiest1,
 .artiest2 {
   margin-bottom: 0.5em;
+}
+
+.playlistMaken {
+  margin: 100em;
 }
